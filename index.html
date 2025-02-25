@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="box" id="login">
+        <form>
+            <h1>Login</h1>
+            <div class="inputBox input-container">
+                <input type="text" name="username" placeholder=" " required>
+                <label for="username">Username</label>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox input-container">
+                <input type="password" id="login-password" placeholder=" " required>
+                <label for="password">Password</label>
+                <i class='bx bxs-lock-alt toggle-icon'></i>
+            </div>
+            <div class="extra">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="">
+                    <span>Remember me</span>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div style="text-align: center;">
+                <span>Don't have an account? </span><a href="#" onclick="register()">Register</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="box" id="register">
+        <form>
+            <h1>Register</h1>
+            <div class="inputBox input-container">
+                <input type="text" name="username" placeholder=" " required>
+                <label for="username">Username</label>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox input-container">
+                <input type="email" name="email" placeholder=" " required>
+                <label for="email">Email</label>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="inputBox input-container">
+                <input type="password" id="register-password" placeholder=" " required>
+                <label for="password">Password</label>
+                <i class='bx bxs-lock-alt toggle-icon'></i>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="" required>
+                <span>I agree to the </span> <a href="#">Terms & Conditions</a>
+            </div>
+            <button type="submit">Register</button>
+            <div style="text-align: center;">
+                <span>Already have an account? </span><a href="#" onclick="login()">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
