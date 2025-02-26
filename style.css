@@ -114,7 +114,7 @@ input:focus {
 .input-container label {
     position: absolute;
     left: 5px;
-    top: 70%;
+    top: 75%;
     transform: translateY(-120%) translateX(12%);
     transition: all 0.3s;
     padding: 0 5px;
